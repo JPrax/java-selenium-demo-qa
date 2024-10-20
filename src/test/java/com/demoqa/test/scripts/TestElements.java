@@ -1,7 +1,6 @@
 package com.demoqa.test.scripts;
 
 import com.demoqa.test.base.BaseTest;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
