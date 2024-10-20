@@ -7,15 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 public class BaseTest {
     protected WebDriver driver;
     protected BasePage basePage;
     protected HomePage homePage;
-    protected SoftAssert softAssert = new SoftAssert();
     private String url = "https://demoqa.com/";
     private String browser = "edge";
 
@@ -40,6 +38,7 @@ public class BaseTest {
         homePage = new HomePage();
         basePage.setDriver(driver);
     }
+
 
     @AfterClass
     public void tearDown(){
